@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Goldman:wght@400;700&display=swap" rel="stylesheet"> <meta charset="UTF-8" />
+  <title>title</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="overlay" id="marginBackLeft"></div>
+  <div class="overlay" id="marginBackRight"></div>
+  <div id="back">
+    <div id="titleBox" class="elms-sans-title centerBox">
+      <h1 id="titleH1"> THE WINNING CORNER</h1>
+
+    </div>
+
+    <div class="centerBox headerBoxes">
+      <h2 id="abc" class="faster-one-regular"> General Self Pitfall Table</h2>
+      <div class="line"></div>
+    </div>
+
+    <div id="pitfallFlexCon">
+      <div id="pitfallGridCon">
+        <div class="allPitCells testBox headBox"><u>
+            <h3>Cognition</h3>
+          </u></div>
+        <div class="allPitCells testBox headBox"><u>
+            <h3>Emotional</h3>
+          </u></div>
+        <div class="allPitCells testBox headBox "><u>
+            <h3>Physical</h3>
+          </u></div>
+        <div class="allPitCells testBox headBox"><u>
+            <h3>Purpose</h3>
+          </u></div>
+        <div class="allPitCells subHeader centerBox">
+          <h3>PROBLEMS</h3>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="cPL"></ul>
+
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="ePL"></ul>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="phPL"></ul>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="puPL"></ul>
+        </div>
+        <div class="allPitCells subHeader centerBox">
+          <h3>SOLUTIONS</h3>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="cSL"></ul>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="eSL"></ul>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="phSL"></ul>
+        </div>
+        <div class="allPitCells testBox">
+          <ul id="puSL"></ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="halfGrid">
+      <div id="buttonBox" class="lexend-text">
+
+        <div id="editDataBox">
+          <div id="dataEntTitle">
+            <h2 id="dataTitle">Data Entry</h2>
+          </div>
+          <div class="form-container">
+            <div class="dataGridBox dgb2 form-item select"><select name="listSelection" id="dataSelector" class="dEItem1">
+                <option value="">--Choose a list--</option>
+                <optgroup label="PROBLEMS">
+                  <option value="cP">Cognition (P)</option>
+                  <option value="eP">Emotional (P)</option>
+                  <option value="phP">Physical (P)</option>
+                  <option value="puP">Purpose (P)</option>
+                </optgroup>
+                <optgroup label="SOLUTIONS">
+                  <option value="cS">Cognition (S)</option>
+                  <option value="eS">Emotional (S)</option>
+                  <option value="phS">Physical (S)</option>
+                  <option value="puS">Purpose (S)</option>
+                </optgroup>
+              </select></div>
+            <div class="dataGridBox dgb4 form-item select"><input type="text" id="dataValue" class="dEItem2"
+                name="username" placeholder="Enter value">
+            </div>
+            <div class="dataGridBox dgb5 form-item select"><button id="dataSubmit"   class=" button-78 dEItem3">Submit Data</button>
+
+            </div>
+           <div class="dataGridBox dgb5 form-item select"><button id="dataCap"  class="button-78 dEItem3">Capitalize All Items</button>
+
+
+          </div>
+        </div>
+
+
+
+
+
+          <div id="middleSpacer"></div>
+          <div id="dataEntTitle">
+          <h2 id="dataTitle">Save/Load Data</h2>
+            </div>
+        <div id="removeFormGap" class="form-container">
+          <div class="form-item-row"><h3 >Upload File</h3><img class="json-img" src="./filetype-json.svg"></div>
+          <div class="form-item">          <input type="file" id="fileInput" accept=".json">
+          <div class="form-item-row">
+
+          <pre id="output"></pre></div>
+          <div class="form-item-row">     <h3>Download File</h3><img class="json-img" src="./filetype-json.svg"></div>
+          <div class="form-item">  <button class="button-78 dEItem3" onclick="downloadJsonFile()">Download</button></div>
+          
+
+
+
+     
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./code.js"></script>
+</body>
+
+</html>
